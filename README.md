@@ -9,3 +9,7 @@ Just run the program and start to practice (first action is type/paste the passw
 shell$ chmod a+x ./pass-training.py #if you did't already do it
 shell$ ./pass-training.py
 ```
+
+Here's an example of use:
+
+![example of use](./example-of-use.png)
