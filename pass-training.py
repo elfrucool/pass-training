@@ -27,6 +27,9 @@ def do_training(pass_to_learn):
 
 def print_stats(info):
     (total, good, pass_to_learn) = info
+    effectiveness = "N/A"
+    if total > 0:
+        effectiveness = "{:.2f}%".format((good * 100.0)/total)
 
     print("statistics:")
     print("===========")
@@ -35,7 +38,7 @@ def print_stats(info):
     print("total answers    : {}".format(total))
     print("good answers     : {}".format(good))
     print("bad answers      : {}".format(total - good))
-    print("efectiveness     : {:.2f}%".format((good * 100.0)/total))
+    print("effectiveness    : {}".format(effectiveness))
 
 def good_bye():
     print("")
